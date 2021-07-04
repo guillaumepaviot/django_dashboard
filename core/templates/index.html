@@ -1,0 +1,26 @@
+{% extends 'main/main.html' %}
+{% load humanize %}
+
+
+{% block title %} Home {% endblock title %}
+
+{% block content%}
+
+{% include 'includes/navbar.html' %}
+
+<h1>Welcome to the home page</h1>
+
+<div id = "chart" style="height: 310px"/>
+
+{% endblock content%}
+
+<!-- Specific JS goes HERE --> 
+{% block javascripts %}
+
+<!-- Plotly.js CDN -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.54.6/plotly.min.js"></script>
+
+<!-- Load and display data -->
+<script defer src="/static/assets/js/get-data.js"></script>
+
+{% endblock javascripts %}

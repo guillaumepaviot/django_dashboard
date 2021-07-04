@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
+{% load static %}
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +10,11 @@
     <title>Project</title>
 </head>
 <body>
-    {% include 'navbar.html' %}
-
     {% block content %}
 
     {% endblock content %}
+
+    <!-- Specific JS goes HERE --> 
+  {% block javascripts %}{% endblock javascripts %}
 </body>
 </html>
